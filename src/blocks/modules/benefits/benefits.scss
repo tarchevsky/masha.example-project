@@ -1,0 +1,23 @@
+.benefits {
+  &__img {
+    img {
+      height: 500px;
+    }
+  }
+
+  &__pwithimg {
+    img {
+      height: 400px;
+    }
+  }
+
+  .disabled {
+    text-align: center;
+  }
+
+  &__game {
+    img {
+      height: revert;
+    }
+  }
+}

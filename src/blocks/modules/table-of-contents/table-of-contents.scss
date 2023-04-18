@@ -1,0 +1,42 @@
+.table-of-contents {
+  ol {
+    list-style-type: revert;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+
+    li {
+      list-style-type: revert;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    ul {
+      margin-block: 10px;
+
+      li {
+        list-style-type: disc;
+      }
+    }
+  }
+
+  &__row {
+    grid-template-columns: 30% 1fr;
+  }
+  
+  &__illustration {
+    img {
+      height: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .table-of-contents {
+    &__row {
+      grid-template-columns: 1fr;
+    }
+  }
+}

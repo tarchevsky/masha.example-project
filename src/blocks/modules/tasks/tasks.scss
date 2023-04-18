@@ -1,0 +1,13 @@
+.tasks {
+  &__img {
+    img {
+      height: revert;
+    }
+  }
+
+  &__pwithimg {
+    img {
+      height: 400px;
+    }
+  }
+}

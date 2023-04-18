@@ -1,0 +1,27 @@
+extends layouts/default
+
+block variables
+    - const title = 'example.tezis.digital - примеры наших работ в нейропсихологии и геймификации'
+    - const description = 'Мы провели около 50 семинаров для специалистов по методам нейропсихологической коррекции, нейроигротек и лекций в разных городах России: Москва, Санкт-Петербург, Рязань, Нижний Новгород, Казань. Темы: «Трудности школьного обучения. Нейропсихологический подход к преодолению», «Нейропсихологическая коррекция. Двигательный нейроинтенсив». Группа в vk “Семинары по Нейропсихологии”. "Развитие мотивации и профилактика эмоционального выгорания". "Сохрани и преумножай связи: Развитие внимания и памяти", "Бей! Беги!Замри! Как снять стресс"'
+    - const keywords = 'ключевые, слова, можно словосочетаниями, короткими ёмкими фразами, нужно для поисковых систем, но едва ли, но пусть будет'
+
+block header
+    include ../blocks/modules/header/header
+
+block content
+    include ../blocks/modules/main/main
+    include ../blocks/modules/table-of-contents/table-of-contents
+    include ../blocks/modules/benefits/benefits
+    include ../blocks/modules/games/games
+    include ../blocks/modules/tasks/tasks
+    include ../blocks/modules/we-can/we-can
+    include ../blocks/modules/merch/merch
+    include ../blocks/modules/trainings/trainings
+    include ../blocks/modules/media/media
+
+block footer
+    include ../blocks/modules/footer/footer
+
+block scripts
+    script(src='js/vendor.js')
+    script(src='js/main.js')
